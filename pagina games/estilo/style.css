@@ -1,0 +1,227 @@
+@charset "UTF-8";
+ @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+@font-face {
+  font-family: 'android';
+  src: url('idroid.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'play';
+  src: url('EmotionEngine-8ynA.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+:root{
+  --cor1:#023535;
+  --cor2:#015958;
+  --cor3:#008F8C;
+  --cor4:#A66574;
+
+  --fonte-padrão:Arial,Verdana,Helvetica,sans-serif;
+  --fonte-título:'android';
+  --fonte-destque:'Alumi sans';
+  --fonte-play:'play';
+
+}
+
+body{
+  background-image: linear-gradient(to top,#1d20eb75,#3B3DB8,#454685,#3B3B52);
+  font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: black;
+}
+
+header{
+  background-image: linear-gradient(to top,#3B3DB8,#454685);
+  text-align: center;
+  padding-top: 60px;
+  min-height: 150px;
+}
+
+header > h1{
+  color: white;
+  font-family: var(--fonte-título);
+  margin-bottom: 20px;
+  font-size: 3em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+  font-weight: normal;
+}
+
+header > p {
+  color: white;
+  font-family: var(--fonte-título);
+  margin: auto;
+  max-width: 500px;
+  font-size: 1em;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.466) ;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+nav{
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.5); 
+}
+
+nav > a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+nav > a:hover{
+  background-color: rgba(66, 66, 228, 0.966);
+  color: #fff;
+}
+
+main{
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  min-width: 300px;
+  max-width: 1000px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 20px;
+  margin: 15px auto;
+  box-shadow: 5px 5px 10px black;
+}
+
+main > .principal{
+  color: #008F8C;
+  margin-top: 10px;
+
+}
+
+main > h1{
+  text-align: center;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.432);
+  font-family: 'android';
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: var(--cor4);
+}
+
+main > h2 {
+  text-align: left;
+  text-indent: 10px;;
+  margin: 18px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+main > .sub{
+  font-family: var(--fonte-play);
+  text-align: justify;
+  color: white;
+ background-color: #454685; 
+  font-weight:bold;
+}
+
+main > p {
+  font-weight: 550;
+  text-align: left;
+  text-align: justify;
+  text-indent: 20px;
+  margin-top: 20px;
+  font-family: var(--fonte-play);
+  margin-bottom: 25px;
+}
+
+
+main > p > strong{
+  font-weight: bold;
+  color: #A66574;
+  padding: 1px;
+}
+
+main > div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main img{
+  width: 50%;
+}
+
+main > .foto{
+  text-align: center;
+}
+
+main > .grande{
+  width: 100%;
+}
+
+aside{
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #a665745b;
+}
+
+aside > h3 {
+  background-color: #454685;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: var(--fonte-título);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+  margin: -10px -10px -10px -10px;
+}
+
+aside > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: var(--fonte-play);
+}
+
+aside > ul{
+  columns: 2;
+  list-style-position: inside;
+  list-style-type: '\1F3AE';
+}
+
+aside > ul > li > a{
+  text-decoration: none;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+div.video{
+  background-color: var(--cor5);
+  margin: 0px -20px 30px -20px;
+  padding: 15px;
+  position: relative;
+  padding-bottom: 50%;
+}
+
+div.video > iframe{
+  position: absolute;
+  top:5% ;
+  left:5% ;
+  width:90% ;
+  height:90% ;
+}
+
+
+footer{
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to left,#3B3DB8,#454685);
+  font-family: var(--fonte-destque);
+  padding: 5px;
+}
